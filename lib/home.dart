@@ -21,10 +21,7 @@ class Home extends StatelessWidget {
               Navigator.pushNamed(context, "/sqlite");
             },
           ),
-          const Divider(
-            height: 1,
-            color: Colors.black54,
-          ),
+          divisorListMain(),
           ListTile(
             leading: buildSvgIcon("images/db.svg"),
             title: const Text("Floor"),
@@ -34,10 +31,7 @@ class Home extends StatelessWidget {
               Navigator.pushNamed(context, "/nosql");
             },
           ),
-          const Divider(
-            height: 1,
-            color: Colors.black54,
-          ),
+          divisorListMain(),
           ListTile(
             leading: buildSvgIcon("images/firebase-icon.svg"),
             title: const Text("Firebase"),
@@ -46,11 +40,7 @@ class Home extends StatelessWidget {
             onTap: () {
               Navigator.pushNamed(context, "/firebase");
             },
-          ),
-          const Divider(
-            height: 1,
-            color: Colors.black54,
-          ),
+          )
         ],
       ),
     );
